@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, h6{
 	font: $menufont;
 	font-size: 16px;
 	line-height: 1.0;
-	opacity: 1;
    	&:hover{
    		background-color: darken($btncolor, 4%)
    	}
@@ -102,12 +101,58 @@ h1, h2, h3, h4, h5, h6{
 	}
 
     &__form{
-    	margin: 0 auto;
     	width: 100%;
-    	position: relative;
-    	display: block;
-    	box-sizing: border-box;
-    	margin-bottom: 110/740*100%;
+    	height: 60px;
+    	margin: 0 auto;
+		text-align: center;
+        position: relative;
+        margin-bottom: 120px;
+		&:focus {
+			outline: none;
+		}
+    }
+    &__input{
+    	margin-bottom: 5%;
+    	border: none;
+    	height: 100%;
+    	width: 100%;
+    	color: $bgcolor;
+    	font-size: 16px;
+    	padding-left: 3%;
+    	padding-right: 155px;
+    	&::placeholder {
+		    color: #999999;
+		    text-align: center;
+		    text-transform: capitalize;
+    }
+	    &:focus {
+	    outline: none;
+	    font-size: 1rem;
+
+	    &::placeholder {
+	    color: transparent;
+	    }
+    }
+}
+    &__btn{
+		background: $btncolor url(../images/search.svg) center no-repeat;
+	    background-position: 90%;
+	    background-size: 0.9rem;
+	    text-transform: uppercase;
+	    width: 150px;
+	    height: 56px;
+	    color: $textcolor;
+	    font-size: 0.9rem;
+	    border-width: 0;
+	    position: absolute;
+	    right: 2px;
+	    top: 2px;
+	    font: $menufont;
+		font-size: 16px;
+		line-height: 1.0;
+	    &:hover{
+   			background-color: darken($btncolor, 4%)
+   	}
     }
     &__scroll{
     	margin: 0 auto;
@@ -337,6 +382,8 @@ input[type="search"]{
 	}
 	&__btn{
 		margin-bottom: 50px;
+		opacity: 1;
+		z-index: 20;
 	}
 }
 

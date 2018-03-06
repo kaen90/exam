@@ -52,8 +52,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0 2px 5px 0 #223a4d;
   font: 400 14px/1.5 "Aleo", Arial, sans-serif;
   font-size: 16px;
-  line-height: 1.0;
-  opacity: 1; }
+  line-height: 1.0; }
   .b-btn:hover {
     background-color: #4064fd; }
 
@@ -84,13 +83,68 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 6.75676%;
       letter-spacing: 0.31em; }
   .b-promo__form {
-    margin: 0 auto;
     width: 100%;
+    height: 60px;
+    margin: 0 auto;
+    text-align: center;
     position: relative;
-    display: block;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-bottom: 14.86486%; }
+    margin-bottom: 120px; }
+    .b-promo__form:focus {
+      outline: none; }
+  .b-promo__input {
+    margin-bottom: 5%;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color: #333333;
+    font-size: 16px;
+    padding-left: 3%;
+    padding-right: 155px; }
+    .b-promo__input::-webkit-input-placeholder {
+      color: #999999;
+      text-align: center;
+      text-transform: capitalize; }
+    .b-promo__input:-ms-input-placeholder {
+      color: #999999;
+      text-align: center;
+      text-transform: capitalize; }
+    .b-promo__input::-ms-input-placeholder {
+      color: #999999;
+      text-align: center;
+      text-transform: capitalize; }
+    .b-promo__input::placeholder {
+      color: #999999;
+      text-align: center;
+      text-transform: capitalize; }
+    .b-promo__input:focus {
+      outline: none;
+      font-size: 1rem; }
+      .b-promo__input:focus::-webkit-input-placeholder {
+        color: transparent; }
+      .b-promo__input:focus:-ms-input-placeholder {
+        color: transparent; }
+      .b-promo__input:focus::-ms-input-placeholder {
+        color: transparent; }
+      .b-promo__input:focus::placeholder {
+        color: transparent; }
+  .b-promo__btn {
+    background: #5474fd url(../images/search.svg) center no-repeat;
+    background-position: 90%;
+    background-size: 0.9rem;
+    text-transform: uppercase;
+    width: 150px;
+    height: 56px;
+    color: #ffffff;
+    font-size: 0.9rem;
+    border-width: 0;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    font: 400 14px/1.5 "Aleo", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.0; }
+    .b-promo__btn:hover {
+      background-color: #4064fd; }
   .b-promo__scroll {
     margin: 0 auto;
     width: 30%;
@@ -320,7 +374,9 @@ input[type="search"] {
     font: 400 16px/1.5 "Josefin Sans", Arial, sans-serif;
     margin-bottom: 45px; }
   .b-book2__btn {
-    margin-bottom: 50px; }
+    margin-bottom: 50px;
+    opacity: 1;
+    z-index: 20; }
 
 /*Quotations*/
 .b-quot {
